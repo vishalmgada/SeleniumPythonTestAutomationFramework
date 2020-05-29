@@ -3,6 +3,5 @@
 # Byte-compiled / optimized / DLL files
 .idea
 *.iml
-drivers/.*
+drivers/*.exe
 /tests/*.log
-
