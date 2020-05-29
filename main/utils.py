@@ -81,3 +81,6 @@ class Utils:
     def move_to_element_and_context_click(self, *identifiers):
         element = self.check_presence_of_element(identifiers)
         ActionChains.context_click(element).perform()
+
+    def capture_screenshot(self, file_name):
+        self.driver.save_screenshot(file_name)
