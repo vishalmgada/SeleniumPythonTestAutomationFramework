@@ -1,0 +1,5 @@
+Browser driver's should be added in this directory with following names:
+
+1. Chrome - chromedriver.exe
+2. Firefox - geckodriver.exe
+3. Edge Chromium - msedgedriver.exe
