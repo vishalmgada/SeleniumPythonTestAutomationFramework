@@ -13,7 +13,7 @@ class Utils:
         self.driver = driver
 
     def wait_for_element_to_be_clickable(self, *identifiers):
-        wait = WebDriverWait(self.driver, Constants.timeout)
+        wait = WebDriverWait(self.driver, Constants.TIMEOUT)
         element = wait.until(expected_conditions.element_to_be_clickable((identifiers[0], identifiers[1])))
         return element
 
@@ -66,7 +66,7 @@ class Utils:
         self.wait_for_element_to_be_clickable(By.TAG_NAME, identifier).send_keys(text)
 
     def check_presence_of_element(self, *identifiers):
-        wait = WebDriverWait(self.driver, Constants.timeout)
+        wait = WebDriverWait(self.driver, Constants.TIMEOUT)
         element = wait.until(expected_conditions.presence_of_element_located((identifiers[0], identifiers[1])))
         return element
 

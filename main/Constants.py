@@ -1,3 +1,3 @@
 class Constants:
 
-    timeout = 30
+    TIMEOUT = 30
